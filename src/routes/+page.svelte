@@ -110,7 +110,7 @@
 <!-- Navigation -->
 <nav class="fixed top-0 left-0 right-0 z-50 bg-bg/90 backdrop-blur-sm border-b border-border">
 	<div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-		<a href="#" class="text-fg font-medium hover:text-aqua transition-colors">mh</a>
+		<a href="/" class="text-fg font-medium hover:text-aqua transition-colors">mh</a>
 		<div class="flex gap-6">
 			{#each navItems as item}
 				<a
@@ -267,14 +267,16 @@
 
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 			{#each projects as project}
-				<a
-					href={project.url}
-					target="_blank"
-					rel="noopener"
-					class="border border-border p-4 bg-bg-card hover:border-aqua transition-colors group"
-				>
+				<div class="border border-border p-4 bg-bg-card hover:border-aqua transition-colors group">
 					<div class="flex items-start justify-between mb-2">
-						<h3 class="text-fg group-hover:text-aqua transition-colors">{project.name}</h3>
+						<a
+							href={project.url}
+							target="_blank"
+							rel="noopener"
+							class="text-fg group-hover:text-aqua transition-colors"
+						>
+							{project.name}
+						</a>
 						<div class="flex items-center gap-2">
 							{#if project.stars}
 								<span class="text-yellow text-xs">{project.stars} stars</span>
@@ -285,7 +287,6 @@
 									target="_blank"
 									rel="noopener"
 									class="text-fg-muted hover:text-aqua"
-									onclick={(e) => e.stopPropagation()}
 								>
 									<ExternalLink class="w-4 h-4" />
 								</a>
@@ -298,7 +299,7 @@
 							<span class="text-xs text-aqua">{tech}</span>
 						{/each}
 					</div>
-				</a>
+				</div>
 			{/each}
 		</div>
 

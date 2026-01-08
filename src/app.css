@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+@import '@fontsource/iosevka/400.css';
+@import '@fontsource/iosevka/500.css';
+@import '@fontsource/iosevka/700.css';
+
+@theme {
+	--font-mono: 'Iosevka', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+	/* Gruvbox Dark */
+	--color-bg: #1d2021;
+	--color-bg-card: #282828;
+	--color-bg-hover: #3c3836;
+	--color-border: #504945;
+
+	--color-fg: #f5f5f4;
+	--color-fg-muted: #a8a29e;
+
+	--color-green: #b8bb26;
+	--color-red: #fb4934;
+	--color-yellow: #fabd2f;
+	--color-aqua: #8ec07c;
+	--color-purple: #d3869b;
+	--color-orange: #fe8019;
+}
+
+html {
+	font-family: var(--font-mono);
+	font-size: 16px;
+	background-color: var(--color-bg);
+	color: var(--color-fg);
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+}
+
+::selection {
+	background-color: var(--color-yellow);
+	color: var(--color-bg);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-border);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-fg-muted);
+}
+
+/* Animations */
+.animate-in {
+	animation: fadeIn 200ms ease-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Staggered animations */
+.stagger-1 { animation-delay: 50ms; }
+.stagger-2 { animation-delay: 100ms; }
+.stagger-3 { animation-delay: 150ms; }
+.stagger-4 { animation-delay: 200ms; }
+.stagger-5 { animation-delay: 250ms; }

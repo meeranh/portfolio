@@ -81,21 +81,12 @@
 		{
 			title: 'Security Engineer & Penetration Tester',
 			company: 'Surge Global',
-			period: 'Nov 2023 - Present',
+			period: 'May 2023 - Present',
 			points: [
 				'Performed VAPT on in-house and client web applications',
 				'Found 10-20 critical vulnerabilities per application on average',
 				'Conducted security code reviews on client codebases',
-				'Built Microsoft Sentinel SIEM solution with Terraform IaC'
-			]
-		},
-		{
-			title: 'Cyber Security Intern',
-			company: 'Surge Global',
-			period: 'May 2023 - Oct 2023',
-			points: [
-				'Performed VAPT on client applications',
-				'Code review for vulnerability detection',
+				'Built Microsoft Sentinel SIEM solution with Terraform IaC',
 				'R&D on prompt injection prevention methods'
 			]
 		}
@@ -247,17 +238,55 @@
 		</div>
 
 		<!-- Bug Bounty -->
-		<div class="mt-8 border border-border p-6 bg-bg-card">
-			<div class="flex items-center gap-3 mb-4">
-				<Bug class="w-5 h-5 text-orange" />
-				<h3 class="text-fg font-medium">Bug Bounty</h3>
+		<div class="flex items-center gap-3 mt-12 mb-6">
+			<Bug class="w-5 h-5 text-orange" />
+			<h3 class="text-fg-muted">bug bounty</h3>
+		</div>
+
+		<div class="space-y-3">
+			<a href="/nasa-recognition.pdf" target="_blank" rel="noopener" class="border border-border p-4 bg-bg-card flex items-center justify-between hover:border-aqua transition-colors group">
+				<div>
+					<p class="text-fg group-hover:text-aqua transition-colors inline-flex items-center gap-2">NASA Letter of Recognition <ExternalLink class="w-3 h-3" /></p>
+					<p class="text-fg-muted text-sm">Received for responsibly disclosing a critical vulnerability</p>
+				</div>
+				<span class="text-sm text-green shrink-0 ml-4"><Award class="w-4 h-4 inline" /></span>
+			</a>
+			<a href="https://bugcrowd.com/engagements/nasa-vdp/hall_of_fames" target="_blank" rel="noopener" class="border border-border p-4 bg-bg-card flex items-center justify-between hover:border-aqua transition-colors group">
+				<div>
+					<p class="text-fg group-hover:text-aqua transition-colors inline-flex items-center gap-2">NASA Hall of Fame <ExternalLink class="w-3 h-3" /></p>
+					<p class="text-fg-muted text-sm">Listed on the NASA VDP researcher acknowledgments</p>
+				</div>
+				<span class="text-sm text-green shrink-0 ml-4"><Award class="w-4 h-4 inline" /></span>
+			</a>
+			<div class="border border-border p-4 bg-bg-card flex items-center justify-between">
+				<div>
+					<p class="text-fg">SAML Authentication Bypass - Admin Takeover</p>
+					<p class="text-fg-muted text-sm">Forged unsigned SAML assertions to gain full admin access on a government application</p>
+				</div>
+				<span class="text-sm text-red shrink-0 ml-4">Critical</span>
 			</div>
-			<div>
-				<p class="text-fg">OpenSea - Sensitive Data Exposure</p>
-				<p class="text-fg-muted text-sm mt-1">Found hardcoded credentials in JavaScript allowing authentication bypass</p>
-				<p class="text-fg-muted text-xs mt-2">BugCrowd &middot; June 2024</p>
+			<a href="https://yeswehack.com/programs/zivver-bug-bounty-program#program-activity" target="_blank" rel="noopener" class="border border-border p-4 bg-bg-card flex items-center justify-between hover:border-aqua transition-colors group">
+				<div>
+					<p class="text-fg group-hover:text-aqua transition-colors inline-flex items-center gap-2">Zivver Hall of Fame <ExternalLink class="w-3 h-3" /></p>
+					<p class="text-fg-muted text-sm">Ranked #3 on the program leaderboard</p>
+				</div>
+				<span class="text-sm text-yellow shrink-0 ml-4">#3</span>
+			</a>
+			<div class="border border-border p-4 bg-bg-card flex items-center justify-between">
+				<div>
+					<a href="https://www.linkedin.com/posts/meeranh_bugbounty-activity-7430920206954418176-dOBD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrA4DEBagWQHnUP0XzR9sMmhBfq_l9tMbg" target="_blank" rel="noopener" class="text-fg hover:text-aqua transition-colors inline-flex items-center gap-2">
+						RCE to Full Cloud Compromise
+						<ExternalLink class="w-3 h-3" />
+					</a>
+					<p class="text-fg-muted text-sm">Exploited unpatched Ghostscript to achieve root RCE, escalating to AWS credential theft</p>
+				</div>
+				<span class="text-sm text-red shrink-0 ml-4">High</span>
 			</div>
 		</div>
+
+		<p class="text-fg-muted text-sm mt-6">
+			...and several other findings across various programs.
+		</p>
 	</section>
 
 	<!-- Projects Section -->

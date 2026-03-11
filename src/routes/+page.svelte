@@ -142,7 +142,7 @@
 					<a href="https://linkedin.com/in/meeranh" target="_blank" rel="noopener" class="text-fg-muted hover:text-aqua transition-colors">
 						<Linkedin class="w-5 h-5" />
 					</a>
-					<a href="mailto:career@meeranh.com" class="text-fg-muted hover:text-aqua transition-colors">
+					<a href="mailto:me@meeranh.com" class="text-fg-muted hover:text-aqua transition-colors">
 						<Mail class="w-5 h-5" />
 					</a>
 				</div>
@@ -258,20 +258,38 @@
 				</div>
 				<span class="text-sm text-green shrink-0 ml-4"><Award class="w-4 h-4 inline" /></span>
 			</a>
+			<a href="https://yeswehack.com/programs/keycloak-bug-bounty-program" target="_blank" rel="noopener" class="border border-border p-4 bg-bg-card flex items-center justify-between hover:border-aqua transition-colors group">
+				<div>
+					<p class="text-fg group-hover:text-aqua transition-colors inline-flex items-center gap-2">Keycloak Hall of Fame <ExternalLink class="w-3 h-3" /></p>
+					<p class="text-fg-muted text-sm">Ranked #3 on the program leaderboard</p>
+					<p class="text-fg-muted text-xs mt-1">CVEs pending</p>
+				</div>
+				<span class="text-sm text-yellow shrink-0 ml-4">#3</span>
+			</a>
+			<a href="https://yeswehack.com/programs/zivver-bug-bounty-program#program-activity" target="_blank" rel="noopener" class="border border-border p-4 bg-bg-card flex items-center justify-between hover:border-aqua transition-colors group">
+				<div>
+					<p class="text-fg group-hover:text-aqua transition-colors inline-flex items-center gap-2">Zivver Hall of Fame <ExternalLink class="w-3 h-3" /></p>
+					<p class="text-fg-muted text-sm">Ranked #6 on the program leaderboard</p>
+				</div>
+				<span class="text-sm text-yellow shrink-0 ml-4">#6</span>
+			</a>
 			<div class="border border-border p-4 bg-bg-card flex items-center justify-between">
 				<div>
-					<p class="text-fg">SAML Authentication Bypass - Admin Takeover</p>
+					<a href="https://bugcrowd.com/disclosures/abfa03c7-9c7d-46f7-b255-9766199dac4a/saml-authentication-bypass-leading-to-unauthenticated-admin-takeover-on-scijinks-gov-nesdis-noaa-gov" target="_blank" rel="noopener" class="text-fg hover:text-aqua transition-colors inline-flex items-center gap-2">
+						SAML Authentication Bypass - Admin Takeover
+						<ExternalLink class="w-3 h-3" />
+					</a>
 					<p class="text-fg-muted text-sm">Forged unsigned SAML assertions to gain full admin access on a government application</p>
 				</div>
 				<span class="text-sm text-red shrink-0 ml-4">Critical</span>
 			</div>
-			<a href="https://yeswehack.com/programs/zivver-bug-bounty-program#program-activity" target="_blank" rel="noopener" class="border border-border p-4 bg-bg-card flex items-center justify-between hover:border-aqua transition-colors group">
+			<div class="border border-border p-4 bg-bg-card flex items-center justify-between">
 				<div>
-					<p class="text-fg group-hover:text-aqua transition-colors inline-flex items-center gap-2">Zivver Hall of Fame <ExternalLink class="w-3 h-3" /></p>
-					<p class="text-fg-muted text-sm">Ranked #3 on the program leaderboard</p>
+					<p class="text-fg">Redirect URI Validation Bypass</p>
+					<p class="text-fg-muted text-sm">Bypassed OAuth redirect URI validation via path traversal to steal authorization codes</p>
 				</div>
-				<span class="text-sm text-yellow shrink-0 ml-4">#3</span>
-			</a>
+				<span class="text-sm text-red shrink-0 ml-4">High</span>
+			</div>
 			<div class="border border-border p-4 bg-bg-card flex items-center justify-between">
 				<div>
 					<a href="https://www.linkedin.com/posts/meeranh_bugbounty-activity-7430920206954418176-dOBD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrA4DEBagWQHnUP0XzR9sMmhBfq_l9tMbg" target="_blank" rel="noopener" class="text-fg hover:text-aqua transition-colors inline-flex items-center gap-2">
@@ -383,10 +401,10 @@
 
 		<div class="flex flex-col sm:flex-row gap-4">
 			<a
-				href="mailto:career@meeranh.com"
+				href="mailto:me@meeranh.com"
 				class="px-6 py-3 border border-border text-fg-muted hover:border-aqua hover:text-aqua transition-colors text-center"
 			>
-				career@meeranh.com
+				me@meeranh.com
 			</a>
 			<a
 				href="https://linkedin.com/in/meeranh"
